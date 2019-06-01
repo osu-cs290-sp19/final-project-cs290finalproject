@@ -1,0 +1,166 @@
+<html>
+<head>
+    <title>Feed</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#feed-panel-left > .feed-inner-panel').css('left', $('#feed-panel-center').position().left - 280 - $(window).scrollLeft());
+            $('#feed-panel-right > .feed-inner-panel').css('left', $('#feed-panel-center').position().left + 600 - $(window).scrollLeft());
+        });
+        $(window).scroll(function(){
+            $('#feed-panel-left > .feed-inner-panel').css('left', $('#feed-panel-center').position().left - 280 - $(window).scrollLeft());
+            $('#feed-panel-right > .feed-inner-panel').css('left', $('#feed-panel-center').position().left + 600 - $(window).scrollLeft());
+        });
+        $(window).on('resize', function() {
+            $('#feed-panel-left > .feed-inner-panel').css('left', $('#feed-panel-center').position().left - 280 - $(window).scrollLeft());
+            $('#feed-panel-right > .feed-inner-panel').css('left', $('#feed-panel-center').position().left + 600 - $(window).scrollLeft());
+        });
+    </script>
+</head>
+<body>
+    <div id="title-bar">
+        <div id="title-bar-items">
+            <div id="atheligo-logo">ATHELIGO<span style="margin-left: 4px; font-size: 14px; letter-spacing: 0px; font-style: italic;">Coach View</span>
+            </div>
+            <div><a href="profile.html"></a></div>
+            <img src="images/whiteprofile.png" onclick="window.location='profile.html'">
+            <img src="images/search.png" onclick="window.location='profile.html'">
+            <img src="images/messages.png" onclick="window.location='messages.html'">
+        </div>
+    </div>
+    <div id="feed-panel">
+        <div class="feed-panel-side" id="feed-panel-left">
+            <div class="feed-inner-panel">
+                <div class="feed-panel-header">Athletes to Follow</div>
+                <div class="feed-athlete-follow">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">Cale Hallamasek</div>
+                        <div class="feed-athlete-info">Sophomore, Sequoia High School</div>
+                    </div>
+                </div>
+                <div class="feed-athlete-follow">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">Peter Barrette</div>
+                        <div class="feed-athlete-info">Junior, Capital High School</div>
+                    </div>
+                </div>
+                <div class="feed-athlete-follow">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">Jordan Hendricks</div>
+                        <div class="feed-athlete-info">Senior, Camas High School</div>
+                    </div>
+                </div>
+                <div class="feed-athlete-follow">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">Dominic Daprano</div>
+                        <div class="feed-athlete-info">Sophomore, Summit High School</div>
+                    </div>
+                </div>
+                <div class="feed-athlete-follow">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">Ruth St. George</div>
+                        <div class="feed-athlete-info">Senior, Crean Lutheran High School</div>
+                    </div>
+                </div>
+                <div class="feed-athlete-follow">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">Riely White</div>
+                        <div class="feed-athlete-info">Junior, Sprague High School</div>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <button>View More</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="center-panel" onclick="window.location='profile.html'"> -->
+        <div id="feed-panel-center">
+            <div class="feed-post-container" id="create-post-container">
+                <textarea id="create-post" placeholder="Create a post..."></textarea>
+                <button style="color: #fff; border: 0; border-radius: 4px; background-color: darkcyan; padding: 4px; padding-left: 12px; padding-right: 12px; margin-top: 6px; margin-right: 20px; float: right;">Post</button>
+            </div>
+            <div class="feed-post-container">
+                <div class="post-school">
+                    <a href="profile.html" class="feed-profile-name">John Smith</a>
+                    <span style="float: right; line-height: 35px; margin-right: 10px;">Sophomore</span>
+                </div>
+                <div class="post-name">
+                    <span style="float: left;">Sequoia High School</span>
+                    <span style="float: right;">Redwood City, CA</span>
+                </div>
+                <img src="images/profile1.jpg" alt="Profile" class="feed-profile-pic">
+                <div class="post-updates">
+                        &emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis purus a pellentesque porta. Donec ipsum ipsum, lacinia id libero vel, finibus consequat odio. Proin posuere mi nibh. Quisque accumsan orci at tortor convallis vulputate. Donec suscipit quam sit amet aliquet tristique. Aenean a turpis enim. Vestibulum mollis nisi a augue maximus mollis. Vivamus egestas eget libero vitae facilisis. Quisque blandit, leo ut pellentesque posuere, quam lorem dictum dui, placerat dapibus nulla eros et purus.
+                </div>
+                <div class="post-bottom-bar">
+                    <img src="images/3dots.png" height="6px;">
+                </div>
+            </div>
+
+            <div class="feed-post-container" style="height: 540px;">
+                <div class="post-school">
+                    <a href="profile.html" class="feed-profile-name">John Smith</a>
+                    <span style="float: right; line-height: 35px; margin-right: 10px;">Sophomore</span>
+                </div>
+                <div class="post-name">
+                    <span style="float: left;">Sequoia High School</span>
+                    <span style="float: right;">Redwood City, CA</span>
+                </div>
+                <img src="images/profile1.jpg" alt="Profile" class="feed-profile-pic">
+                <img src="images/dribble.jpg" width="500px;" style="margin-top: -40px;">
+                <div class="post-updates" style="margin-top: 20px; height: 20px;">
+                    &emsp;&emsp;This is a caption. People can add text to their photos.
+                </div>
+                <div class="post-bottom-bar">
+                    <img src="images/3dots.png" height="6px;">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="feed-panel-side" id="feed-panel-right">
+            <div class="feed-inner-panel">
+                <div class="feed-panel-header">Upcoming Events</div>
+                <div class="feed-athlete-follow">
+                    <img src="images/circle.png" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">State Badminton Tournament</div>
+                        <div class="feed-athlete-info">Sequoia High School</div>
+                    </div>
+                </div>
+                <div class="feed-athlete-follow">
+                    <img src="images/circle.png" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">Regional Cross Country Event</div>
+                        <div class="feed-athlete-info">Ingraham High School</div>
+                    </div>
+                </div>
+                <div class="feed-athlete-follow">
+                    <img src="images/circle.png" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">11th Annual Meet of Champions</div>
+                        <div class="feed-athlete-info">Camas High School</div>
+                    </div>
+                </div>
+                <div class="feed-athlete-follow">
+                    <img src="images/circle.png" width="60px">
+                    <div class="feed-athlete-text">
+                        <div class="feed-athlete-name">Bend Basketball Indoor Classic</div>
+                        <div class="feed-athlete-info">Summit High School</div>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <button>View More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="title-bar">
+        <div id="title-bar-items">
+            <div id="atheligo-logo">ATHELIGO<span style="margin-left: 4px; font-size: 14px; letter-spacing: 0px; font-style: italic;">Coach View</span>
+            </div>
+            <div><a href="profile.html"></a></div>
+            <img src="images/whiteprofile.png" onclick="window.location='profile.html'">
+            <img src="images/search.png" onclick="window.location='profile.html'">
+            <img src="images/messages.png" onclick="window.location='messages.html'">
+        </div>
+    </div>
+    <div id="profile-panel">
+        <div id="profile-school-bg">
+            <img src="images/profile1.jpg" alt="Profile" id="profile-pic">
+            <div id="profile-info">
+                <span id="profile-name">John Smith</span>
+                <span id="profile-grade">Sophomore</span>
+                <button onclick="window.location='messages.html'">Message</button>
+            </div>
+        </div>
+        <div id="profile-sections">
+            <div id="profile-panel-left">
+                <div id="profile-school-info">
+                    <div id="profile-school-name">SEQUOIA HIGH SCHOOL</div>
+                    <div id="profile-school-location">Redwood City, CA</div>
+                </div>
+                <div id="profile-bio">&emsp;&emsp;This text describes the athlete, their goal for the next year and
+                    their ambitions outside of their sport. Now this is just some more filler text to
+                    make the person in this demo have a larger bio. And this is also some more filler text.
+                </div>
+                <div id="profile-sports-box">
+                    <div id="profile-sport-title">Basketball</div>
+                    <div id="profile-sport-stats">
+                        <div id="stat-header">
+                            <div class="profile-stat profile-stat-title">Season</div>
+                            <div class="profile-stat profile-stat-title">PPG</div>
+                            <div class="profile-stat profile-stat-title">FG</div>
+                            <div class="profile-stat profile-stat-title">Fouls</div>
+                            <div class="profile-stat profile-stat-title">MP</div>
+                        </div>
+                        <div class="year">
+                            <div class="profile-stat profile-stat-title">2017-2018</div>
+                            <div class="profile-stat">15.6</div>
+                            <div class="profile-stat">80.6</div>
+                            <div class="profile-stat">2</div>
+                            <div class="profile-stat">23.4</div>
+                        </div>
+                        <div class="year">
+                            <div class="profile-stat profile-stat-title" >2018-2019</div>
+                            <div class="profile-stat">20.1</div>
+                            <div class="profile-stat">84.3</div>
+                            <div class="profile-stat">3</div>
+                            <div class="profile-stat">30.4</div>
+                        </div>
+                        <div id="profile-stat-details">More Details</div>
+                    </div>
+                </div>
+                <h3>Academics</h3>
+                <div style="margin-top: 60px; margin-left: 25px;">No data available.</div>
+            </div>
+            <div id="profile-panel-right">
+                <div id="gallery-head">Gallery</div>
+                <div id="gallery">
+                    <img src="images/dribble.jpg" alt="dribble" class="profile-gallery-picture">
+                    <img src="images/shot.jpg" alt="shot" class="profile-gallery-picture">
+                    <img src="images/dunk.jpg" alt="dunk" class="profile-gallery-picture">
+                    <img class="video">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
