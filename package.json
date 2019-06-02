@@ -1,0 +1,23 @@
+{
+  "name": "atheligo",
+  "version": "1.0.0",
+  "description": "Atheligo using react components and props",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prestantious/Atheligo.git"
+  },
+  "author": "Dominic Daprano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prestantious/Atheligo/issues"
+  },
+  "homepage": "https://github.com/Prestantious/Atheligo#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
