@@ -33,6 +33,14 @@ a { /* a is the profile name links */
     transition: color .2s;
 }
 
+footer {
+    background-color: #023366;
+    padding-top: 4px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
 a:visited {
     color: black;
 }
@@ -51,18 +59,145 @@ a:hover {
     background: darkcyan;
 }
 
+/*------------------------------
+    Homepage stuff here
+------------------------------*/
+#cinematic-bg {
+    text-align: center;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 400px;
+    width: 100%;
+    height: 400px;
+}
+
+#darken {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+#try-container {
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    line-height: 400px;
+    height: 100%;
+    width: 100%;
+}
+
+#try-container > button {
+    margin-top: -160px;
+}
+
+#what-is-container {
+    color: #fff;
+    width: 100%;
+    height: 340px;
+    text-align: center;
+    background-color: #00499e;
+}
+
+#what-is { /* TODO: make the content center without margins */
+    padding-top: 54px;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+#why-atheligo { /* TODO: make the content center without margins */
+    padding-top: 24px;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+#atheligo-desc {
+    text-align: left;
+    line-height: 24px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#atheligo-why {
+    text-align: left;
+    line-height: 24px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#inquire-container {
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    background-color: rgb(196, 196, 196);
+}
+
+#inquire-container > input {
+    width: 400px;
+    padding: 6px;
+    margin-top: -10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+#inquire-container > button {
+    color: rgb(70, 70, 70);
+    background: transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 6px;
+    margin-top: 14px;
+    transition: .5s all;
+    border: 2px solid rgb(70, 70, 70);
+}
+
+#inquire-container > button:hover {
+    color: white;
+    background: rgb(70, 70, 70);
+}
+
+#register-school {
+    padding-top: 16px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+#alt-sign-in {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#alt-sign-in > a {
+    color: darkcyan;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/*
+* Login page stuff
+*/
+#login-window {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
 /*-------------------
 
 title bar css is here
 --------------*/
 #title-bar {
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     background-color: darkcyan;
     top: 0;
     width: 100%;
     height: 60px;
-    border-bottom: 2px solid white;
 }
 
 #title-bar-items {
@@ -74,6 +209,27 @@ title bar css is here
     min-width: 500px;
     height: 80px;
 }
+
+#title-bar-items > button {
+    color: #fff;
+    float: right;
+    background: transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 14px;
+    transition: .5s all;
+    border: 2px solid #fff;
+}
+
+#title-bar-items > button:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+
 
 #title-bar-items > img {
     display: block;
@@ -95,6 +251,70 @@ title bar css is here
     color: white;
     background: transparent;
     line-height: 60px;
+}
+
+/*
+* Stuff for homepage
+*/
+#request-demo {
+    color: #fff;
+    background: transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 6px;
+    margin-top: 14px;
+    border: 2px solid #fff;
+    transition: .5s all;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+#request-demo:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#try-atheligo {
+    font-size: 20px;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
 }
 
 /* ------------------------------------------------------------
