@@ -528,6 +528,7 @@ title bar css is here
 /* general reusable css */
 .view-more {
     margin-top: 24px;
+    margin-bottom: 10px;
 }
 
 .view-more > button {
@@ -549,10 +550,8 @@ title bar css is here
 
 /* all the main components of the feed */
 #feed-panel {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 80px;
-    width: 1220px;
+    margin-top: 90px;
+    width: 1300px;
     white-space: nowrap;
     text-align: center;
     margin-left: auto;
@@ -560,18 +559,21 @@ title bar css is here
 }
 
 #feed-panel-left {
+    padding-left: 35px;
     width: 240px;
     float: left;
 }
 
 #feed-panel-center {
-    margin-top: -5px;
+    margin-left: 50px;
+    margin-right: 10px;
     display: inline-block;
     white-space: normal;
     width: 600px;
 }
 
 #feed-panel-right {
+    padding-right: 35px;
     width: 310px;
     float: right;
 }
@@ -579,7 +581,6 @@ title bar css is here
 .feed-inner-panel {
     background-color: white;
     border-radius: 4px;
-    margin-top: 10px;
     box-shadow: 0px 3px 3px #bbb;
     border: 1px solid grey;
 }
@@ -593,16 +594,14 @@ title bar css is here
     margin-top: 8px;
 }
 
-.feed-panel-side {
-    display: inline-block;
-}
+
 
 .feed-post-container {
     width: 560px;
     height: 280px;
     box-shadow: 0px 3px 3px #bbb;
     background: white;
-    margin-top: 2.5%;
+    margin-bottom: 18px;
     border-radius: 4px;
     border: 1px solid grey;
 }
@@ -649,6 +648,18 @@ title bar css is here
     height: 155px;
 }
 
+.post-button {
+    color: #fff;
+    border: 0;
+    border-radius:
+    4px; background-color:
+    darkcyan; padding:
+    4px; padding-left: 12px;
+    padding-right: 12px; margin-top: 6px;
+    margin-right: 20px;
+    float: right;
+}
+
 
 .feed-profile-pic { /* makes the image round */
     position: relative;
@@ -673,19 +684,33 @@ title bar css is here
 }
 
 
-.post-school {
+.post-name {
     /* background: lightslategray; */
     border-bottom: 2px solid darkcyan;
     height: 40px;
 }
 
-.post-name {
+.post-grade {
+    float: right;
+    line-height: 35px;
+    margin-right: 10px;
+}
+
+.post-school {
     margin-top: 4px;
     width: 440px;
     position: relative;
     left: 110px;
     font-size: 14px;
 }
+.post-school-name {
+    float: left;
+}
+
+.post-school-location {
+    float: right;
+}
+
 
 .post-updates { /* formatting for a feed post-update */
     border: 1px solid lightgray;
