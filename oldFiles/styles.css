@@ -1,0 +1,898 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url("Comfortaa/Comfortaa_Bold.ttf");
+}
+
+@font-face {
+    font-family: "Berlin";
+    src: url("berlin/Berlin.ttf");
+}
+
+* {
+    margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+html {
+    overflow: scroll;
+}
+
+body {
+    background: #eee;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 24px;
+    margin-bottom: -40px;
+}
+
+a { /* a is the profile name links */
+    color: black;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+footer {
+    background-color: #023366;
+    padding-top: 4px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: darkcyan;
+}
+
+/*------------------------------
+    Homepage stuff here
+------------------------------*/
+#cinematic-bg {
+    text-align: center;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 400px;
+    width: 100%;
+    height: 400px;
+}
+
+#darken {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+#try-container {
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    line-height: 400px;
+    height: 100%;
+    width: 100%;
+}
+
+#try-container > button {
+    margin-top: -160px;
+}
+
+#what-is-container {
+    color: #fff;
+    width: 100%;
+    height: 340px;
+    text-align: center;
+    background-color: #00499e;
+}
+
+#what-is { /* TODO: make the content center without margins */
+    padding-top: 54px;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+#why-atheligo { /* TODO: make the content center without margins */
+    padding-top: 24px;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+#atheligo-desc {
+    text-align: left;
+    line-height: 24px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#atheligo-why {
+    text-align: left;
+    line-height: 24px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#inquire-container {
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    background-color: rgb(196, 196, 196);
+}
+
+#inquire-container > input {
+    width: 400px;
+    padding: 6px;
+    margin-top: -10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+#inquire-container > button {
+    color: rgb(70, 70, 70);
+    background: transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 6px;
+    margin-top: 14px;
+    transition: .5s all;
+    border: 2px solid rgb(70, 70, 70);
+}
+
+#inquire-container > button:hover {
+    color: white;
+    background: rgb(70, 70, 70);
+}
+
+#register-school {
+    padding-top: 16px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+#alt-sign-in {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#alt-sign-in > a {
+    color: darkcyan;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/*
+* Login page stuff
+*/
+#login-window {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+/*-------------------
+
+title bar css is here
+--------------*/
+#title-bar {
+    z-index: 3;
+    position: fixed;
+    background-color: darkcyan;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+#title-bar-items {
+    width: 100%;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    min-width: 500px;
+    height: 80px;
+}
+
+#title-bar-items > button {
+    color: #fff;
+    float: right;
+    background: transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 14px;
+    transition: .5s all;
+    border: 2px solid #fff;
+}
+
+#title-bar-items > button:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+
+
+#title-bar-items > img {
+    display: block;
+    float: right;
+    width: 60px;
+}
+
+#title-bar-items div {
+    display: inline-block;
+}
+
+#atheligo-logo {
+    font-family: Berlin;
+    letter-spacing: 4px;
+    margin-left: 20px;
+    display: inline-block;
+    width: 200px;
+    font-size: 26px;
+    color: white;
+    background: transparent;
+    line-height: 60px;
+}
+
+/*
+* Stuff for homepage
+*/
+#request-demo {
+    color: #fff;
+    background: transparent;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 6px;
+    margin-top: 14px;
+    border: 2px solid #fff;
+    transition: .5s all;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+#request-demo:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#try-atheligo {
+    font-size: 20px;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+/* ------------------------------------------------------------
+* this is all the syling for the profile page
+*
+*
+*
+*
+-------------------------------------------------------------*/
+#profile-school-bg {
+    border-bottom: 2px solid darkcyan;
+    width: 100%;
+    height: 80px;
+}
+
+#profile-sections {
+    display: flex;
+    font-size: 0;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+#profile-sections > div {
+    font-size: 16px;
+}
+
+#profile-panel-left {
+    display: inline-block;
+    width: 550px;
+    height: 680px;
+    border-right: 2px solid #555;
+}
+
+#profile-panel-right {
+    display: inline-block;
+    background-color: white;
+    width: 400px;
+    height: 670px; /*  school banner is 60px consider making wider */
+    overflow-y: scroll;
+}
+
+
+#profile-panel {
+    width: 950px;  /* FIXME this was changed */
+    height: 760px;  /* FIXME this was changed */
+    margin-top: 90px; /* FIXME this was changed edit this to change the height from top */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px #bbb;
+    border: 1px solid grey;
+}
+
+/* the top panels css starts here */
+#profile-name {
+    font-weight: 600;
+    float: left;
+    clear: left;
+    font-size: 28px;
+    margin-left: 11px;
+}
+
+#profile-grade {
+    float: left;
+    clear: left;
+    font-size: 14px;
+}
+
+#profile-info {
+    padding-top: 12px;
+    margin-left: 15%;
+    height: 100px;
+    color: black;
+}
+
+#profile-info > button {
+    float: right;
+    margin-top: -20px;
+    margin-right: 24px;
+    border: 2px solid darkcyan;
+    background-color: darkcyan;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#profile-pic { /* makes the image round */
+    position: absolute;
+    margin: 10px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+/* Left divider of the profile */
+#profile-school-info {
+    margin: 10px;
+    height: 20px;
+    margin-top: 6px;
+    margin-left: 125px;
+}
+
+#profile-school-name {
+    font-weight: bold;
+    float: left;
+    clear: left;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+#profile-school-location {
+    font-size: 12px;
+    line-height: 20px;
+    float: right;
+}
+
+#profile-grade {
+    float: left;
+    clear: left;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    margin-left: 12px;
+}
+
+#profile-bio {
+    text-align: left;
+    white-space: normal;
+    width: 455px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+/* this is all css related for the stats box */
+#profile-sports-box {
+    width: 500px;
+    height: 230px;
+    margin: 25px;
+    border: 2px solid lightgrey;
+}
+
+#profile-sport-title {
+    background: transparent;
+    border: 2px solid darkcyan;
+    font-size: 20px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 4px;
+    float: left;
+    color: darkcyan;
+}
+
+#profile-stat-details {
+    margin-right: 35px;
+    float: right;
+    border-radius: 4px;
+    font-size: 12px;
+    border: 2px solid grey;
+    color: #555;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+}
+
+#profile-sport-stats {
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.profile-stat-title {
+    font-weight: bold;
+}
+
+.profile-stat {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
+
+/* Right divider of the profile */
+#gallery-head {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: white;
+    text-align: center;
+    /* position: fixed;
+    width: 292px; */
+}
+
+.profile-gallery-picture {
+    width: 350px;
+    margin: 25px; /* 400px total */
+    margin-top: -5px;
+    float: left;
+}
+
+/* ------------------------------------------------------------
+* this is all the syling for the profile page
+*
+*
+*
+*
+-------------------------------------------------------------*/
+
+/* general reusable css */
+.view-more {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.view-more > button {
+    color: darkcyan;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid darkcyan;
+    border-radius: 4px;
+    transition: all .2s;
+}
+
+.view-more > button:hover {
+    background-color: darkcyan;
+    color: #fff;
+}
+
+/* all the main components of the feed */
+#feed-panel {
+    margin-top: 90px;
+    width: 1300px;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#feed-panel-left {
+    padding-left: 35px;
+    width: 240px;
+    float: left;
+}
+
+#feed-panel-center {
+    margin-left: 50px;
+    margin-right: 10px;
+    display: inline-block;
+    white-space: normal;
+    width: 600px;
+}
+
+#feed-panel-right {
+    padding-right: 35px;
+    width: 310px;
+    float: right;
+}
+
+.feed-inner-panel {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px #bbb;
+    border: 1px solid grey;
+}
+
+.feed-inner-panel > div {
+    display: block;
+}
+
+.feed-panel-header {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+
+
+.feed-post-container {
+    width: 560px;
+    height: 280px;
+    box-shadow: 0px 3px 3px #bbb;
+    background: white;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+/* Athletes to follow part of the feed */
+
+.feed-athlete-text {
+    padding-top: 10px;
+    height: 40px;
+}
+
+.feed-athlete-name {
+
+}
+
+.feed-athlete-info {
+    font-size: 10px;
+}
+
+.feed-athlete-follow {
+    margin-left: 10px;
+    margin-top: 12px;
+    text-align: left;
+}
+
+.feed-athlete-follow > img {
+    float: left;
+}
+
+
+/* middle of the feed */
+
+#create-post {
+    padding: 4px;
+    resize: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 520px;
+    height: 100px;
+}
+
+#create-post-container {
+    height: 155px;
+}
+
+.post-button {
+    color: #fff;
+    border: 0;
+    border-radius:
+    4px; background-color:
+    darkcyan; padding:
+    4px; padding-left: 12px;
+    padding-right: 12px; margin-top: 6px;
+    margin-right: 20px;
+    float: right;
+}
+
+
+.feed-profile-pic { /* makes the image round */
+    position: relative;
+    top: -49px;
+    left: -170px;
+    margin: 10px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+.post-bottom-bar {
+    margin-top: 30px;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    height: 30px;
+}
+
+.post-bottom-bar > img {
+    margin-top: 8px;
+    margin-right: 10px;
+    float: right;
+}
+
+
+.post-name {
+    /* background: lightslategray; */
+    border-bottom: 2px solid darkcyan;
+    height: 40px;
+}
+
+.post-grade {
+    float: right;
+    line-height: 35px;
+    margin-right: 10px;
+}
+
+.post-school {
+    margin-top: 4px;
+    width: 440px;
+    position: relative;
+    left: 110px;
+    font-size: 14px;
+}
+.post-school-name {
+    float: left;
+}
+
+.post-school-location {
+    float: right;
+}
+
+
+.post-updates { /* formatting for a feed post-update */
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: -45px;
+    text-align: left;
+    width: 500px;
+    height: 120px;
+    font-size: 14px;
+}
+
+.feed-profile-name {
+    line-height: 40px;
+    margin-left: 110px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    float: left;
+    clear: left;
+    font-size: 15px;
+}
+
+/* ------------------------------------------------------------
+* messages css code here
+*
+*
+------------------------------------------------------------ */
+.contact {
+    height: 60px;
+    margin-top: 4px;
+    border-bottom: 1px solid lightgray;
+}
+
+.contact > span {
+    line-height: 60px;
+    font-size: 18px;
+    display: block;
+    margin-left: 8px;
+    width: 200px;
+    float: left;
+}
+
+.selected > span {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+.contact > img {
+    margin-left: 8px;
+    display: inline;
+    float: left;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.message-mobile {
+    font-size: 30px;
+    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    display: inline-block;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+}
+
+.message {
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 4px;
+    display: inline-block;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+}
+
+.message-incoming {
+    float: left;
+    clear: left;
+    background-color: lightslategray;
+    color: #fff;
+}
+
+.message-outgoing {
+    margin-right: 2.5%;
+    float: right;
+    clear: right;
+    background-color: #fff;
+    color: #000;
+}
+
+#contact-container { /* so that it is no longer beind the fixed bar */
+    margin-top: 30px;
+}
+
+#messages-container {
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 540px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px #bbb;
+    border: 1px solid grey;
+}
+
+#recent-contacts {
+    overflow-y: scroll;
+    width: 300px;
+    height: inherit;
+    float: left;
+    background-color: #FFF;
+    border-right: 2px solid gray;
+}
+
+#recent-banner {
+    position: fixed;
+    width: 292px;
+    background-color: #82D4BB;
+    border-right: 1px solid lightslategray;
+    border-bottom: 2px solid #82D4BB;
+    padding: 4px;
+    color: #fff;
+}
+
+#conversation-container {
+    width: 498px;
+    height: inherit;
+    float: right;
+    background-color: lightcyan;
+}
+
+#new-message {
+    border-top: 2px solid darkgray;
+    width: inherit;
+    position: absolute;
+    border-radius: 4px;
+    height: 60px;
+    margin-top: 284px;
+
+}
+
+#new-message > textarea:focus {
+    outline: none;
+}
+
+#new-message > textarea {
+    width: 470px;
+    height: 90px;
+    resize: none;
+    padding: 6px;
+    font-size: 14px;
+    color: black;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+#new-message > textarea::placeholder {
+    font-size: 14px;
+}
+
+#message-stream {
+    margin-top: 8px;
+    width: 470px;
+    height: 100px;
+    margin-left: 14px;
+}
+
+#send-message-button {
+    float: right;
+    margin-top: 8px;
+    margin-right: 14px;
+    background-color: green;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: background-color .2s;
+}
+
+#send-message-button:hover {
+    background-color: rgb(3, 65, 3);
+}

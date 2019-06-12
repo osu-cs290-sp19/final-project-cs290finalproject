@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Messages</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="messaging.js" charset="utf-8" defer></script>
+</head>
+<body>
+    <div id="title-bar">
+        <div id="title-bar-items">
+            <div id="atheligo-logo">ATHELIGO<span style="margin-left: 4px; font-size: 14px; letter-spacing: 0px; font-style: italic;">Coach View</span>
+            </div>
+            <div><a href="profile.html"></a></div>
+            <img src="images/whiteprofile.png" onclick="window.location='profile.html'">
+            <img src="images/search.png" onclick="window.location='profile.html'">
+            <img src="images/messages.png" onclick="window.location='messages.html'">
+        </div>
+    </div>
+    <div id="messages-container">
+        <div id="recent-contacts">
+            <div id="recent-banner">Recent Contacts</div>
+            <div id="contact-container">
+                <div class="contact selected" id="current-contact">
+                    <img src="images/profile1.jpg" style="margin-top: 6px; margin-left: 14px;" width="48px">
+                    <span style="margin-left: 14px;" onclick="window.location='profile.html'">John Smith</span>
+                </div>
+                <div class="contact">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <span>Halli Briscoe</span>
+                </div>
+                <div class="contact">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <span>Dominic Daprano</span>
+                </div>
+                <div class="contact">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <span>Cale Hallamasek</span>
+                </div>
+                <div class="contact">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <span>Firstname Last</span>
+                </div>
+                <div class="contact">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <span>Firstname Last</span>
+                </div>
+                <div class="contact">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <span>Firstname Last</span>
+                </div>
+                <div class="contact">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <span>Firstname Last</span>
+                </div>
+                <div class="contact">
+                    <img src="images/profilePlaceholder.jpg" width="60px">
+                    <span>Firstname Last</span>
+                </div>
+        </div>
+        </div>
+        <div id="conversation-container">
+            <div id="message-stream">
+                <div class="message message-incoming">
+                    I am really intested in hearing more about Oregon State!
+                </div>
+            </div>
+            <div id="new-message">
+                <textarea id="message-input" placeholder="Write something..."></textarea>
+                <div id="send-message-button">Send<div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
